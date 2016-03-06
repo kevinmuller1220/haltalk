@@ -1,0 +1,54 @@
+<h1 class="page-header">signup <small>relation</small></h1>
+
+<div class="well method">
+  <h2>POST</h2>
+  <p class="description">
+    Create an account
+  </p>
+  <div class="request">
+    <h3>Request</h3>
+    <div class="type">
+      <h4>Headers</h4>
+      <div>The request should have the Content-Type application/json</div>
+    </div>
+    <div class="body">
+      <h4>Body</h4>
+      <div class="required">
+        <h5>Required properties</h5>
+        <ul>
+          <li><strong>username</strong>: string</li>
+          <li><strong>password</strong>: string</li>
+        </ul>
+      </div>
+      <div class="required">
+        <h5>Optional properties</h5>
+        <ul>
+          <li><strong>bio</strong> : string</li>
+          <li><strong>real_name</strong> : string</li>
+        </ul>
+      </div>
+      <div class="example">
+        <h5>Example</h5>
+        <pre>
+{
+  "username": "fred",
+  "password": "pwnme",
+  "real_name": "Fred Wilson"
+}
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div class="response">
+    <h3>Responses</h3>
+    <div class="code">
+      <h4>201 Created</h4>
+      <div class="headers">
+        <h5>Headers</h5>
+        <ul>
+          <li>Location: URI of the created <a href="/rels/user">user</a> account</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

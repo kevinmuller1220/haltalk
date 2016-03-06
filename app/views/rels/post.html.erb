@@ -1,0 +1,45 @@
+<h1 class="page-header">post</h1>
+
+<div class="well method">
+  <h2>GET</h2>
+  <p class="description">
+    Show a post
+  </p>
+
+  <div class="response">
+    <h3>Responses</h3>
+    <div class="code">
+      <h4>200 OK</h4>
+      <div class="body">
+        <h5>Body</h5>
+        <div class="state">
+          <h6>State</h6>
+          <ul>
+            <li><strong>content</strong>: a string containing the content of the post.</li>
+            <li><strong>created_at</strong>: string containing date at which post was created.</li>
+          </ul>
+        </div>
+        <div class="links">
+          <h6>Links</h6>
+          <ul>
+            <li><a href="/rels/author">ht:author</a> (REQUIRED)</li>
+            <li><a href="/rels/in-reply-to">ht:in-reply-to</a> (OPTIONAL)</li>
+          </ul>
+        </div>
+        <div class="example">
+          <h6>Example:</h6>
+          <pre>
+{
+  "content": "I am a microblog post.",
+  "created_at": "2012-07-07T13:44:20+01:00",
+  "_links": {
+    "self": { "href": "/posts/123" },
+    "ht:author": { "href": "/users/mike" },
+    "ht:in-reply-to": { "href": "/posts/111" }
+  }
+}
+          </pre>
+      </div>
+    </div>
+  </div>
+</div>

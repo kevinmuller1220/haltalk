@@ -1,0 +1,14 @@
+development:
+  host: localhost
+  database: haltalk_development
+
+test:
+  host: localhost
+  database: haltalk_test
+
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+      options:
+        safe: true

@@ -1,0 +1,3 @@
+[submodule "public/explorer"]
+	path = public/explorer
+	url = git://github.com/mikekelly/hal-browser.git
