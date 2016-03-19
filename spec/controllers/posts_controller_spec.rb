@@ -59,6 +59,7 @@ describe PostsController do
       3.times do
         @posts << @user.posts.create(valid_content)
       end
+      
       @user_two = User.create({ username: 'bar', password: 'foo' })
       3.times do
         @posts << @user_two.posts.create(valid_content)
